@@ -1,0 +1,14 @@
+<br>
+<form id="formLogin" action="#">
+  <div class="form-group" style="margin-left: 50px">
+    <label for="exampleInputEmail1" class="fw-bold">Usuario</label>
+    <input [(ngModel)]="inputUsuario" name="inputUsuario" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba su usuario" style="width: 30vw;">
+  </div>
+  <br>
+  <div class="form-group" style="margin-left: 50px">
+    <label for="exampleInputPassword1" class="fw-bold">Password</label>
+    <input [(ngModel)]="inputPassword" name="inputPassword" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 30vw;">
+  </div>
+  <br>
+  <button (click)="checkLogin()" type="submit" class="btn btn-primary" style="margin-left: 50px;">Submit</button>
+</form>
