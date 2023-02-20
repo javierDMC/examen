@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { Error404Component } from './error404/error404.component';
 import { LoginComponent } from './login/login.component';
+import { Seccion1Component } from './sections/seccion1/seccion1.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     InicioComponent,
     Error404Component,
-    LoginComponent
+    LoginComponent,
+    Seccion1Component
   ],
   imports: [
     BrowserModule,

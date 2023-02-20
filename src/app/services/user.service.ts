@@ -32,6 +32,8 @@ export class UserService {
     if(usuarioEncontrado && passwordEncontrao){
       let pos=this.users.findIndex(u=>u.usuario==usuarioFormulario);
       this.users[pos].login=1;
+      window.confirm("¡Bievenido " + usuarioEncontrado.usuario + "!");
+      // alert("¡Bievenido " + usuarioEncontrado.usuario + "!");
     }
     console.log(usuarioEncontrado);
   }
