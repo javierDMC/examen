@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TareasService } from 'src/app/services/tareas.service';
 
 @Component({
   selector: 'app-finalizar-tarea',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./finalizar-tarea.component.css']
 })
 export class FinalizarTareaComponent {
+
 
 }

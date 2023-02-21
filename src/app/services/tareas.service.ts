@@ -40,7 +40,13 @@ export class TareasService {
       return this.tareas[pos];
     }
 
-    getTotales(){}
+    getTotales(){
+
+      return  {
+        "totRealizadas":this.tareas.filter(t => t.estado == "Realizada").length,
+        "totPendientes":this.tareas.filter(t => t.estado == "Pendiente").length
+      }
+    }
 
     deleteTareas(id:string){
       let pos = this.tareas.findIndex(t => t.id == id);
