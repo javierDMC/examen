@@ -4,10 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { TareasComponent } from './components/tareas/tareas.component';
+import { TareaComponent } from './components/tarea/tarea.component';
+import { BorrarTareasComponent } from './components/borrar-tareas/borrar-tareas.component';
+import { FinalizarTareaComponent } from './components/finalizar-tarea/finalizar-tarea.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    InicioComponent,
+    TareasComponent,
+    TareaComponent,
+    BorrarTareasComponent,
+    FinalizarTareaComponent
   ],
   imports: [
     BrowserModule,
