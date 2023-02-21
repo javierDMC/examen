@@ -4,11 +4,12 @@ import { BorrarTareasComponent } from './components/borrar-tareas/borrar-tareas.
 import { FinalizarTareaComponent } from './components/finalizar-tarea/finalizar-tarea.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { TareasComponent } from './components/tareas/tareas.component';
+import { BorrarGuardaGuard } from './guards/borrar-guarda.guard';
 
 const routes: Routes = [
   {path:"inicio", component:InicioComponent},
   {path:"tareas", component:TareasComponent},
-  {path:"borrarTareas", component:BorrarTareasComponent},
+  {path:"borrarTareas", canActivate:[BorrarGuardaGuard],component:BorrarTareasComponent},
   {path:"finalizarTarea/:id", component:FinalizarTareaComponent}
 ];
 

@@ -57,4 +57,13 @@ export class TareasService {
       return this.tareas.filter(t=>t.estado==estado);
     }
 
+    endTarea(id:string){
+      let tareaIndex = this.tareas.findIndex(t=> t.id == id);
+
+      let tarea = this.tareas[tareaIndex];
+
+      tarea.estado = "Realizada";
+      return true;
+    }
+
 }
