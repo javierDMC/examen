@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BorrarTareasComponent } from './borrar-tareas.component';
+import { PanelTareasComponent } from './panel-tareas.component';
 
-describe('BorrarTareasComponent', () => {
-  let component: BorrarTareasComponent;
-  let fixture: ComponentFixture<BorrarTareasComponent>;
+describe('PanelTareasComponent', () => {
+  let component: PanelTareasComponent;
+  let fixture: ComponentFixture<PanelTareasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BorrarTareasComponent ]
+      declarations: [ PanelTareasComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BorrarTareasComponent);
+    fixture = TestBed.createComponent(PanelTareasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

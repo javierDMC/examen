@@ -4,11 +4,12 @@ import { Tarea } from 'src/app/models/tarea';
 import { TareasService } from 'src/app/services/tareas.service';
 
 @Component({
-  selector: 'app-borrar-tareas',
-  templateUrl: './borrar-tareas.component.html',
-  styleUrls: ['./borrar-tareas.component.css']
+  selector: 'app-panel-tareas',
+  templateUrl: './panel-tareas.component.html',
+  styleUrls: ['./panel-tareas.component.css']
 })
-export class BorrarTareasComponent {
+export class PanelTareasComponent {
+
   tareas!:Tarea[];
   seleccionado:string = "Todas";
 
@@ -20,8 +21,7 @@ export class BorrarTareasComponent {
   }
 
   borrarTarea(id:string){
-    this.miServicio.deleteTareas(id);
+    this.miServicio.endTarea(id);
   }
-
 
 }

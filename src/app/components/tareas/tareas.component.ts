@@ -21,7 +21,6 @@ export class TareasComponent {
   }
 
   filtrarTareas(){
-
     if(this.seleccionado != "Todas"){
       this.tareas = this.service.filtrarTareas(this.seleccionado);
     }else{

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { BorrarGuardaGuard } from './borrar-guarda.guard';
+import { PanelGuardaGuard } from './panel-guarda.guard';
 
-describe('BorrarGuardaGuard', () => {
-  let guard: BorrarGuardaGuard;
+describe('PanelGuardaGuard', () => {
+  let guard: PanelGuardaGuard;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    guard = TestBed.inject(BorrarGuardaGuard);
+    guard = TestBed.inject(PanelGuardaGuard);
   });
 
   it('should be created', () => {

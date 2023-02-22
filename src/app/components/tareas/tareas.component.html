@@ -1,3 +1,4 @@
+<!--HTML para el componente tareas -->
 <br>
 <h3>Listado de Tareas</h3>
 <div  style="width:75%">
@@ -11,7 +12,6 @@
         <option value="Todas">Todas</option>
         <option value="Pendiente">Pendiente</option>
         <option value="Realizada">Realizada</option>
-        <!-- {{seleccionado}} -->
     </select>
 </th>
 </tr>
@@ -21,7 +21,7 @@
     <td>{{tarea.id}}</td>  <!--id tarea -->
     <td>{{tarea.nombre}}</td>  <!--nombre tarea -->
     <td>{{tarea.estado}}</td>  <!--estado tarea -->
-    <td><button class="btn btn-danger" *ngIf="tarea.estado == 'Pendiente' "routerLink="/finalizarTarea/{{tarea.id}}">Finalizar</button></td>  <!--Boton finalizar Tarea -->
+    <td><button class="btn btn-danger" *ngIf="tarea.estado == 'Pendiente'" routerLink="/finalizarTarea/{{tarea.id}}">Finalizar</button></td>  <!--Boton finalizar Tarea -->
 </tr>
 </tbody>
 </table>
